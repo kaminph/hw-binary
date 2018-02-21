@@ -7,26 +7,10 @@ var timer = function() {
 	// get the current date & time
 	var time = new Date();
 	//console.log(time);
-
-	// var hour = time.getHours();
-	// console.log(hour);
-
-	// var hourDegit1 = hour.toString().substring(0,1);
-	// console.log(hourDegit1);
-
-	// var hourDegit2 = hour.toString().substring(1,2);
-	// console.log(hourDegit2);
-
-	
-
-	//exercise.roman(time);
-
 	// show roman time, using 6 columns
 	setRoman(time);
-
 	// show binary time
 	setBinary(time);
-
 	// update every 1 second
 	setTimeout(timer, 1000);
 };
@@ -44,13 +28,11 @@ var setRoman = function(time){
 	document.getElementById("sec_col1").innerHTML = timeObj["sec_col1"];
 	document.getElementById("sec_col2").innerHTML = timeObj["sec_col2"];
 
-
 };
 
 var setBinary = function(time){
 	// set roman time
 	// you must implement exercise.binary()
-	
 	
 
 	//hour col 1------------------------------------------------------------
@@ -243,7 +225,7 @@ window.onload = function(){
 -->
 
 <!-- HH -->
-<div id="hour_col1" style= "left:10px; top:450px;">2</div>
+<div id="hour_col1" style= "left:10px; top:450px;"></div>
 <div id="hour_col1_pos1" style= "left:10px; top:340px;"></div>
 <div id="hour_col1_pos2" style= "left:10px; top:230px;"></div>
 <div id="hour_col1_pos4" style= "left:10px; top:120px; visibility:hidden"></div>
